@@ -8261,6 +8261,28 @@
       }
     ]
   },
+  "playno1.com": {
+    "_name": "PLAYNO.1玩樂達人",
+    "stno1": [
+      {
+        "title": "情趣",
+        "docs": "https://docs.rsshub.app/bbs.html#playno-1-wan-le-da-ren",
+        "source": [
+          "/stno1/:catid/"
+        ],
+        "target": "/playno1/st/:catid"
+      }
+    ],
+    "www": [
+      {
+        "title": "AV",
+        "docs": "https://docs.rsshub.app/bbs.html#playno-1-wan-le-da-ren",
+        "source": [
+          "/portal.php"
+        ]
+      }
+    ]
+  },
   "polkaworld.org": {
     "_name": "PolkaWorld",
     "www": [
@@ -10686,6 +10708,18 @@
         "docs": "https://docs.rsshub.app/new-media.html#xiao-zhuan-lan",
         "source": "/:id",
         "target": "/xiaozhuanlan/column/:id"
+      }
+    ]
+  },
+  "xidian.edu.cn": {
+    "_name": "西安电子科技大学",
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-dian-zi-ke-ji-da-xue",
+        "source": [
+          "/:category"
+        ]
       }
     ]
   },
