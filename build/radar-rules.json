@@ -1660,6 +1660,17 @@
       }
     ]
   },
+  "aip.org": {
+    "_name": "American Institute of Physics",
+    "pubs": [
+      {
+        "title": "Journal",
+        "docs": "https://docs.rsshub.app/routes/journal#american-institute-of-physics",
+        "source": "/:pub/:jrn",
+        "target": "/aip/:pub/:jrn"
+      }
+    ]
+  },
   "airchina.com.cn": {
     "_name": "中国国际航空公司",
     "www": [
@@ -6031,6 +6042,27 @@
           "/"
         ],
         "target": "/distill"
+      }
+    ]
+  },
+  "dlnews.com": {
+    "_name": "DL NEWS",
+    ".": [
+      {
+        "title": "All Articles",
+        "docs": "https://docs.rsshub.app/routes/finance#dl-news",
+        "source": [
+          "/articles/"
+        ],
+        "target": "/dlnews/"
+      },
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/routes/finance#dl-news",
+        "source": [
+          "/articles/:category"
+        ],
+        "target": "/dlnews/:category"
       }
     ]
   },
@@ -19383,22 +19415,6 @@
       }
     ]
   },
-  "scitation.org": {
-    "_name": "scitation",
-    ".": [
-      {
-        "title": "journal",
-        "docs": "https://docs.rsshub.app/routes/journal#scitation",
-        "source": ":pub.scitation.org/toc/:jrn",
-        "target": "/scitation/:pub/:jrn"
-      },
-      {
-        "title": "section",
-        "docs": "https://docs.rsshub.app/routes/journal#scitation",
-        "source": ":pub.scitation.org/toc/:jrn"
-      }
-    ]
-  },
   "scmp.com": {
     "_name": "South China Morning Post",
     ".": [
@@ -23242,6 +23258,30 @@
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
         "source": "/column/:id",
         "target": "/zhihu/zhuanlan/:id"
+      },
+      {
+        "title": "xhu - 收藏夹",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/collection/:id",
+        "target": "/zhihu/xhu/collection/:id"
+      },
+      {
+        "title": "xhu - 问题",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/question/:questionId",
+        "target": "/zhihu/xhu/question/:questionId"
+      },
+      {
+        "title": "xhu - 话题",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/topic/:topicId/:type",
+        "target": "/zhihu/xhu/topic/:topicId"
+      },
+      {
+        "title": "xhu - 专栏",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/column/:id",
+        "target": "/zhihu/xhu/zhuanlan/:id"
       }
     ],
     "zhuanlan": [
@@ -26779,7 +26819,7 @@
     "www": [
       {
         "title": "ads",
-        "docs": "https://docs.rsshub.app/routes/en/shopping#leboncoin",
+        "docs": "https://docs.rsshub.app/routes/shopping#leboncoin",
         "source": "/recherche"
       }
     ]
@@ -27192,13 +27232,13 @@
     "ece": [
       {
         "title": "ECE News",
-        "docs": "http://docs.rsshub.app/en/routes/university#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/news",
         "target": "/umass/amherst/ecenews"
       },
       {
         "title": "ECE Seminar",
-        "docs": "http://docs.rsshub.app/en/routes/university#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/seminars",
         "target": "/umass/amherst/eceseminar"
       }
@@ -27206,7 +27246,7 @@
     "www.cics": [
       {
         "title": "CICS News",
-        "docs": "http://docs.rsshub.app/en/routes/university#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/news",
         "target": "/umass/amherst/csnews"
       }
@@ -27214,13 +27254,13 @@
     "www": [
       {
         "title": "IPO Events",
-        "docs": "http://docs.rsshub.app/en/routes/university#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/ipo/iss/events",
         "target": "/umass/amherst/ipoevents"
       },
       {
         "title": "IPO Featured Stories",
-        "docs": "http://docs.rsshub.app/en/routes/university#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/ipo/iss/featured-stories",
         "target": "/umass/amherst/ipostories"
       }
