@@ -1373,12 +1373,26 @@
   },
   "abskoop.com": {
     "_name": "A姐分享",
+    "nsfw": [
+      {
+        "title": "NSFW 存档列表",
+        "docs": "https://docs.rsshub.app/routes/multimedia#a-jie-fen-xiang",
+        "source": [
+          "/articles-archive",
+          "/"
+        ],
+        "target": "/abskoop"
+      }
+    ]
+  },
+  "ahhhhfs.com": {
+    "_name": "A姐分享",
     ".": [
       {
         "title": "存档列表",
-        "docs": "https://docs.rsshub.app/routes/multimedia#abskoop",
+        "docs": "https://docs.rsshub.app/routes/multimedia#a-jie-fen-xiang",
         "source": [
-          "/archives"
+          "/"
         ],
         "target": "/abskoop"
       }
@@ -14773,6 +14787,19 @@
       }
     ]
   },
+  "luxiangdong.com": {
+    "_name": "土猛的员外",
+    ".": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/blog#luxiangdong",
+        "source": [
+          "/"
+        ],
+        "target": "/luxiangdong/archive"
+      }
+    ]
+  },
   "lvv2.com": {
     "_name": "LVV2",
     ".": [
@@ -22601,6 +22628,41 @@
       }
     ]
   },
+  "tfc-taiwan.org.tw": {
+    "_name": "台灣事實查核中心",
+    ".": [
+      {
+        "title": "專題",
+        "docs": "https://docs.rsshub.app/routes/other#tai-wan-shi-shi-cha-he-zhong-xin",
+        "source": "/articles/category/:id+",
+        "target": "/tfc-taiwan/category/:id"
+      },
+      {
+        "title": "最新相關資訊",
+        "docs": "https://docs.rsshub.app/routes/other#tai-wan-shi-shi-cha-he-zhong-xin",
+        "source": [
+          "/articles/info",
+          "/"
+        ],
+        "target": "/tfc-taiwan/info"
+      },
+      {
+        "title": "最新查核報告",
+        "docs": "https://docs.rsshub.app/routes/other#tai-wan-shi-shi-cha-he-zhong-xin",
+        "source": [
+          "/articles/report",
+          "/"
+        ],
+        "target": "/tfc-taiwan/report"
+      },
+      {
+        "title": "重點專區",
+        "docs": "https://docs.rsshub.app/routes/other#tai-wan-shi-shi-cha-he-zhong-xin",
+        "source": "/topic/:id",
+        "target": "/tfc-taiwan/topic/:id"
+      }
+    ]
+  },
   "theatlantic.com": {
     "_name": "The Atlantic",
     "www": [
@@ -23330,6 +23392,51 @@
           "/"
         ],
         "target": "/tongji/yjs"
+      }
+    ]
+  },
+  "toodaylab.com": {
+    "_name": "理想生活实验室",
+    ".": [
+      {
+        "title": "滚动",
+        "docs": "https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-gun-dong",
+        "source": [
+          "/posts"
+        ],
+        "target": "/toodaylab/posts"
+      },
+      {
+        "title": "最热",
+        "docs": "https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-zui-re",
+        "source": [
+          "/posts"
+        ],
+        "target": "/toodaylab/hot"
+      },
+      {
+        "title": "专栏",
+        "docs": "https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-zhuan-lan",
+        "source": [
+          "/column/:id"
+        ],
+        "target": "/toodaylab/column/:id"
+      },
+      {
+        "title": "领域",
+        "docs": "https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-ling-yu",
+        "source": [
+          "/field/:id"
+        ],
+        "target": "/toodaylab/field/:id"
+      },
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-hua-ti",
+        "source": [
+          "/topic/:id"
+        ],
+        "target": "/toodaylab/topic/:id"
       }
     ]
   },
