@@ -5158,6 +5158,11 @@
         docs:"https://docs.rsshub.app/routes/game#gamebase-xin-wen",
         source:[ "/news/:type" ],
         target:(params, url) => `/gamebase/news/${params.type}/${new URL(url).searchParams.get('type')}` } ] },
+  "gamegene.cn":{ _name:"游戏基因",
+    news:[ { title:"资讯",
+        docs:"https://docs.rsshub.app/routes/game#you-xi-ji-yin",
+        source:[ "/news" ],
+        target:"/gamegene/news" } ] },
   "gamer.com.tw":{ _name:"巴哈姆特電玩資訊站",
     acg:[ { title:"GNN 新聞",
         docs:"https://docs.rsshub.app/routes/bbs#ba-ha-mu-te-dian-wan-zi-xun-zhan",
@@ -8766,6 +8771,11 @@
                     const cat = url.match(/\?series=(.*)&category=(.*)/);
                     return `/lovelive-anime/schedules/${null !== cat && cat.length >= 2 ? cat[1] : ''}/${null !== cat && cat.length === 3 ? cat[2] : ''}`;
                 } } ] },
+  "lsnu.edu.cn":{ _name:"乐山师范学院",
+    ".":[ { title:"教学部通知公告",
+        docs:"https://docs.rsshub.app/university.html#le-shan-shi-fan-xue-yuan",
+        source:[ "/" ],
+        target:"/lsnu/jiaowc/tzgg" } ] },
   "luogu.com.cn":{ _name:"洛谷",
     ".":[ { title:"日报",
         docs:"https://docs.rsshub.app/routes/programming#luo-gu",
